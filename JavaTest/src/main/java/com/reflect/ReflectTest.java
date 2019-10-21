@@ -7,6 +7,15 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * 3种获取Class对象的方法：
+ * 1:Object.getClass()
+ * 2:Class.forName()
+ * 3:Object.class
+ *
+ * 通过Class对象获取Field、Method和Constructor
+ * 可修改Field的值，可调用Method方法，注意accessible的值
+ */
 public class ReflectTest {
 
     public ReflectTest() {
@@ -56,5 +65,6 @@ public class ReflectTest {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+
     }
 }

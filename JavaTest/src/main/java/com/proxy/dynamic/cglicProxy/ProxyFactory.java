@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
  * Cglib是一个强大的高性能的代码生成包,它可以在运行期扩展java类与实现java接口.它广泛的被许多AOP的框架使用,例如Spring AOP和synaop,
  * 为他们提供方法的interception(拦截)
  * Spring的核心包中已经包括了Cglib功能
- * 代理的类不能为final,否则报错
+ * 被代理的类不能为final,否则报错
  * 目标对象的方法如果为final/static,那么就不会被拦截,即不会执行目标对象额外的业务方法
  */
 public class ProxyFactory implements MethodInterceptor {
